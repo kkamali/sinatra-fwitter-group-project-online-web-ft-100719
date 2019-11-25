@@ -112,6 +112,7 @@ describe ApplicationController do
       }
       post '/login', params
       get '/logout'
+      post '/logout'
       expect(last_response.location).to include("/login")
     end
 
